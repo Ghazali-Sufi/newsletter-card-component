@@ -5,7 +5,7 @@ const sass = require("gulp-sass")(require("sass"));
 function buildStyles() {
   return src("index.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(dest("css"));
+    .pipe(dest("dist/css"));
 }
 
 function watchTask() {
