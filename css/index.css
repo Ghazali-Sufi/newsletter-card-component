@@ -22,21 +22,67 @@ body {
   border-radius: 0.7rem;
   box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 768px) {
+  .container .card {
+    width: 40rem;
+  }
+}
+@media (max-width: 640px) {
+  .container .card {
+    width: 30rem;
+  }
+}
 .container .card__content {
   padding: 50px 100px;
+  text-align: center;
 }
 .container .card__content .card__title, .container .card__content .card__text {
   margin-bottom: 10px;
   text-align: center;
+}
+.container .card__content .card__title {
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .container .card__content .card__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 640px) {
+  .container .card__content .card__title {
+    font-size: 19px;
+  }
 }
 .container .card__content .card__text {
   font-weight: 500;
   color: grey;
   width: 580px;
 }
+@media (max-width: 768px) {
+  .container .card__content .card__text {
+    width: 440px;
+  }
+}
+@media (max-width: 640px) {
+  .container .card__content .card__text {
+    width: 360px;
+    margin-left: -35px;
+    font-size: 15px;
+  }
+}
 .container .card__content .agreement {
   display: flex;
-  margin-left: 20px;
+  margin-left: 25px;
+}
+@media (max-width: 768px) {
+  .container .card__content .agreement {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .container .card__content .agreement {
+    margin-left: -25px;
+  }
 }
 .container .card__content .agreement input {
   position: absolute;
@@ -45,10 +91,19 @@ body {
   font-size: 9px;
   margin-left: 20px;
   font-weight: 600;
-  width: 530px;
+  width: 506px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .container .card__content .agreement p {
+    font-size: 10px;
+    margin-left: 20px;
+    width: 380px;
+  }
 }
 .container .card__content .card__form {
   margin-bottom: 10px;
+  margin-left: -18px;
 }
 .container .card__content .card__form .card__input {
   width: 400px;
@@ -59,7 +114,12 @@ body {
   border: 1px solid gray;
   background-color: #F4FFFD;
   margin-right: 10px;
-  margin-left: 20px;
+}
+@media (max-width: 640px) {
+  .container .card__content .card__form .card__input {
+    width: 300px;
+    margin-right: 0px;
+  }
 }
 .container .card__content .card__form .card__button {
   height: 50px;
@@ -69,4 +129,10 @@ body {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container .card__content .card__form .card__button {
+    width: 220px;
+    margin-top: 10px;
+  }
 }
